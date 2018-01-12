@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import {loadUsers} from "./actions";
 import UserDetailContainer from "./containers/UserDetailContainer";
 import ListOfUsersContainer from "./containers/ListOfUsersContainer";
-import SearchBox from "./components/SearchBox";
+import SearchBoxContainer from "./containers/SearchBoxContainer.js";
 
 class App extends Component {
   constructor(){
@@ -21,7 +21,7 @@ class App extends Component {
   render(){
     return (
       <div>
-        <SearchBox />
+        <SearchBoxContainer />
         <ListOfUsersContainer />
         <UserDetailContainer />
       </div>
